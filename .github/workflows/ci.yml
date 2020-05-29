@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: codemerx/assembly-differ-action@v0.2.1
+    - uses: codemerx/assembly-differ-action@v0.2.2
       with:
         args: '-h'
 
