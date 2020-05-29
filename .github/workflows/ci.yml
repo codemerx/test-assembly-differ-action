@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - uses: codemerx/assembly-differ-action@v0.2.1
-    with:
-      args: '-h'
+      with:
+        args: '-h'
 
