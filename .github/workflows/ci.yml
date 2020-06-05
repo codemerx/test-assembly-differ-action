@@ -23,6 +23,6 @@ jobs:
         ref: v0.3.3
     - uses: codemerx/assembly-differ-action@v0.3.3
       with:
-        args: '"assembly|${{github.workspace}}\test-assembly-differ-action\assembly-differ.dll" "assembly|${{github.workspace}}\test-assembly-differ-action\JustAssembly.API" -p=major'
+        args: '"assembly|${{github.workspace}}\test-assembly-differ-action\assembly-differ.dll" "assembly|${{github.workspace}}\test-assembly-differ-action\JustAssembly.API.dll" -p=major'
         assembly-differ-binaries: '${{github.workspace}}\assembly-differ-action\binaries'
 
