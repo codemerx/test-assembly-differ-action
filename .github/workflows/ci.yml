@@ -15,6 +15,9 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: codemerx/test-assembly-differ-action
+    - uses: actions/checkout@v2
+      with:
+        repository: codemerx/assembly-differ-action
     - uses: codemerx/assembly-differ-action@v0.3.1
       with:
         args: '"assembly|${{github.workspace}}\assembly-differ.dll" "assembly|${{github.workspace}}\assembly-differ.dll"'
