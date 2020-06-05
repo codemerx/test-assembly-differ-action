@@ -20,7 +20,7 @@ jobs:
       with:
         repository: codemerx/assembly-differ-action
         path: assembly-differ-action
-    - uses: codemerx/assembly-differ-action@v0.3.2
+    - uses: codemerx/assembly-differ-action@v0.3.3
       with:
         args: '"assembly|${{github.workspace}}\test-assembly-differ-action\assembly-differ.dll" "assembly|${{github.workspace}}\test-assembly-differ-action\assembly-differ.dll"'
         assembly-differ-binaries: '${{github.workspace}}\assembly-differ-action\binaries'
