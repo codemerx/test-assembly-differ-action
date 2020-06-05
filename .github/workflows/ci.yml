@@ -12,7 +12,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: codemerx/assembly-differ-action@v0.3.0
+    - uses: actions/checkout@v2
+      repository: codemerx/test-assembly-differ-action
+    - uses: codemerx/assembly-differ-action@v0.3.1
       with:
-        args: '"assembly|assembly-differ.dll" "assembly|assembly-differ.dll"'
+        args: '"assembly|D:\a\test-assembly-differ-action\test-assembly-differ-action\test-assembly-differ-action\assembly-differ.dll" "assembly|D:\a\test-assembly-differ-action\test-assembly-differ-action\test-assembly-differ-action\assembly-differ.dll"'
 
