@@ -8,5 +8,10 @@ namespace TestLibrary
         {
             Console.WriteLine();
         }
+
+        public void TestMethod2()
+        {
+            Console.WriteLine();
+        }
     }
 }
