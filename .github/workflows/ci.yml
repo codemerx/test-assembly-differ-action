@@ -1,4 +1,3 @@
-
 name: CI
 
 on: workflow_dispatch
@@ -12,7 +11,7 @@ jobs:
       with:
         repository: codemerx/test-assembly-differ-action
         path: test-assembly-differ-action
-    - uses: codemerx/assembly-differ-action@v0.3.5
+    - uses: codemerx/assembly-differ-action@release-preparation
       with:
         args: '"assembly|${{github.workspace}}\test-assembly-differ-action\latest-release\TestLibrary.dll" "assembly|${{github.workspace}}\test-assembly-differ-action\TestLibrary\TestLibrary\bin\debug\netstandard2.0\TestLibrary.dll" -p=major'
 
